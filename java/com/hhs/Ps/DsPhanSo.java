@@ -36,7 +36,8 @@ public class DsPhanSo {
     }
     
     public void xoaPS(int x, int y){
-        
+        PhanSo ok = new PhanSo(x, y);
+        this.danhSach.removeIF(x -> x == ok);
     }
     
     public void hienThi(){
@@ -58,3 +59,4 @@ public class DsPhanSo {
         this.danhSach = danhSach;
     }
 }
+
